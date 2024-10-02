@@ -2,7 +2,7 @@
 #número de dados, al azar.
 import random
 salir=True 
-resultados=list()
+resultados=""
 while(salir):
     print("TIRADA DE DADOS")
     n=int(input("Número de dados: "))
@@ -10,7 +10,6 @@ while(salir):
         print("¡Imposible!")
     else:
         for i in range (0,n):
-            resultados.append(random.randint(1,6))
-        print("Dados: "+resultados)
+            resultados=resultados+str(random.randint(1,6))+" "
+        print("Dados: "+str(resultados))
         salir=False
-//CORREGIRRRRRR
